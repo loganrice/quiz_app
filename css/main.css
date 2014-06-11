@@ -1,0 +1,28 @@
+.header-wrapper {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	
+}
+
+header {
+	width: 960px;
+	background: grey;
+	margin: 0 auto;	
+}
+
+.content-wrapper {
+	margin-top: 70px;
+}
+
+.questions {
+	width: 960px;
+	margin: 0 auto;
+	background: grey;
+}
+
+.choices {
+	width: 960px;
+	margin: 0 auto;
+	background: grey;
+}
