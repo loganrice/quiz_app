@@ -1,28 +1,54 @@
+* {
+	outline: red solid thin;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
 .header-wrapper {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	
 }
 
 header {
 	width: 960px;
+	height: 55px;
 	background: grey;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 
+header li {
+	display: inline-block;
+	margin: 15px;
+}
+
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
 .content-wrapper {
 	margin-top: 70px;
+	height: 50%;
+	width: 100%;
+	background-color: blue;
 }
 
 .questions {
-	width: 960px;
+	width: 80%;
+	min-width: 500px;
 	margin: 0 auto;
 	background: grey;
+	height: 50%;
 }
 
 .choices {
-	width: 960px;
+	width: 80%;
+	min-width: 500px;
+	height: 50%;
 	margin: 0 auto;
 	background: grey;
 }
