@@ -1,6 +1,4 @@
-* {
-	outline: red solid thin;
-}
+
 
 html, body {
 	height: 100%;
@@ -55,3 +53,24 @@ header li {
 	background: grey;
 }
 
+.choice {
+	background-color: rgb(40, 89, 122);
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+	background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+	border-radius: 3px;
+	border-top: 1px solid #96d1f8;
+	color: rgb(204, 204, 204);
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	font-size: 19px;
+	font-family: Georgia, serif;
+	text-align: center;
+	padding: 10px;
+	margin: 8px;
+}
+
+.choice:hover {
+	border-top-color: #28597a;
+	background: #28597a;
+	color: #ccc;
+}
