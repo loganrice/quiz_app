@@ -1,7 +1,9 @@
 $(document).ready(function(){
 	
-	fillInQuiz(quiz.one);
-
+	$('.btn-wrapper').click(function(){
+		fillInQuiz(quiz.one);
+		$(this).hide("slow");
+	});
 })
 
 var quiz = {
