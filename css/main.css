@@ -49,7 +49,6 @@ header li {
 	max-width: 600px;
 	min-width: 500px;
 	margin: 0 auto;
-	background: grey;
 	height: 50%;
 }
 
@@ -62,9 +61,8 @@ header li {
 	width: 80%;
 	min-width: 500px;
 	max-width: 600px;
-	height: 50%;
-	margin: 0 auto;
-	background: grey;
+	margin: 10px auto;
+	border: 1px solid SlateGray;
 }
 
 .choice {
