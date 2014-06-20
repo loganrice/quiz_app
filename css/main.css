@@ -32,7 +32,6 @@ header li {
 	margin-top: 70px;
 	height: 100%;
 	width: 100%;
-	background-color: blue;
 }
 
 .questions {
@@ -42,6 +41,11 @@ header li {
 	margin: 0 auto;
 	background: grey;
 	height: 50%;
+}
+
+.question {
+	border: 10px solid #384047;
+	height: 90%;
 }
 
 .choices {
