@@ -44,6 +44,12 @@ header li {
 	width: 100%;
 }
 
+.question-counter {
+	font-family: Georgia, serif;
+	text-align: right;
+	margin: 15px;
+}
+
 .questions {
 	width: 80%;
 	max-width: 600px;
