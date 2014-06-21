@@ -1,11 +1,3 @@
-$(document).ready(function(){
-	
-	$('.btn-wrapper').click(function(){
-		fillInQuiz(quiz[0].choices);
-		$(this).hide("slow");
-	});
-})
-
 var quiz = [
 	{ choices: ["hand stand", "top spin", "head spin", "pushup"],
 	correctAnswer: 3,
@@ -13,9 +5,29 @@ var quiz = [
 }
 ]
 
+$(document).ready(function(){
+	
+	$('.btn-wrapper').click(function(){
+		$(this).hide("slow");
+		startQuiz();
+	});
+
+	$('#choiceList').on('click', '.choice', function() {
+		hasAnswer($(this).attr('id'));
+	})
+})
+
+function startQuiz() {
+	fillInQuiz(quiz[0].choices);
+}
+
+function hasAnswer(choice) {
+	return quiz[0].correctAnswer == choice;
+}
+
 function fillInQuiz(choices) {
 	for(i=0; i<choices.length; i++){
-		var listItem = '<li class="choice" id=choice' + i + '>' + choices[i] + '</li>';
+		var listItem = '<li class="choice" id=' + i + '>' + choices[i] + '</li>';
 		$("#choiceList").append(listItem);
 	}
 }
