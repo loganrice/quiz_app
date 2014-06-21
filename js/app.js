@@ -15,7 +15,8 @@ var quiz = [
 
 function fillInQuiz(choices) {
 	for(i=0; i<choices.length; i++){
-		$("#choiceList").append('<li class="choice">' + choices[i] +'</li>');
+		var listItem = '<li class="choice" id=choice' + i + '>' + choices[i] + '</li>';
+		$("#choiceList").append(listItem);
 	}
 }
 
