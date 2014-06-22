@@ -36,7 +36,7 @@ $(document).ready(function(){
 })
 
 function hasAnswer(choice) {
-	return quiz[CURRENTQUESTION].correctAnswer == choice;
+	return quiz[CURRENTQUESTION - 1].correctAnswer == choice;
 }
 
 function fillInQuiz(choices) {
@@ -49,5 +49,5 @@ function fillInQuiz(choices) {
 function nextQuestion() {
 	$('#choiceList > li').remove();
 	fillInQuiz(quiz[CURRENTQUESTION].choices);
-	CURRENTQUESTION++;
+	return CURRENTQUESTION++;
 }
