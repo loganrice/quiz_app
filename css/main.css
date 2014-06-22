@@ -223,3 +223,45 @@ header li {
   left: 50%;
   margin-left: -3px;
 }
+
+.unhighlight {
+  background-color: grey;
+  border-radius: 3px;
+  border-top: 1px solid #96d1f8;
+  color: rgb(204, 204, 204);
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  font-size: 19px;
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 10px;
+  margin: 8px;
+}
+
+.correct {
+  background-color: green;
+  border-radius: 3px;
+  border-top: 1px solid #96d1f8;
+  color: rgb(204, 204, 204);
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  font-size: 19px;
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 10px;
+  margin: 8px;
+}
+
+.incorrect {
+  background-color: red;
+  border-radius: 3px;
+  border-top: 1px solid #96d1f8;
+  color: rgb(204, 204, 204);
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  font-size: 19px;
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 10px;
+  margin: 8px;
+}

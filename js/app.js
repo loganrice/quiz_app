@@ -13,7 +13,15 @@ $(document).ready(function(){
 	});
 
 	$('#choiceList').on('click', '.choice', function() {
-		hasAnswer($(this).attr('id'));
+		var answer = hasAnswer($(this).attr('id'));
+		if (answer == true){
+			$(this).addClass("correct");
+		} else {
+			$(this).addClass("incorrect");
+		}
+		$(this).removeClass("choice");
+		$(this).siblings().removeClass("choice");
+		$(this).siblings().addClass("unhighlight");
 	})
 })
 
@@ -22,6 +30,7 @@ function startQuiz() {
 }
 
 function hasAnswer(choice) {
+	console.log(quiz[0].correctAnswer == choice);
 	return quiz[0].correctAnswer == choice;
 }
 
