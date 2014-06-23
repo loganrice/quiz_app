@@ -13,13 +13,19 @@ var quiz = [
 	correctAnswer: 2,
 	info: "Warning: Do not",
 	image: "headslide.gif"
+	},
+	{ choices: ["hand stand", "moon walk", "head slide", "walking the dog"],
+	correctAnswer: 2,
+	info: "Warning: Do not",
+	image: "headslide.gif"
 	}
 ]
 
 var CURRENTQUESTION = 0;
 
 $(document).ready(function(){
-	
+	$(".questionTotal").text(quiz.length);
+
 	$('.btn-wrapper').click(function(){
 		$(this).hide("slow");
 		nextQuestion();
@@ -50,6 +56,8 @@ function fillInQuiz(quizObject) {
 	var choices = quizObject[CURRENTQUESTION].choices;
 	var image = quizObject[CURRENTQUESTION].image;
 	var imagePath = "img/" + image
+
+	$(".questionNum").text(CURRENTQUESTION + 1);
 
 	for(i=0; i<choices.length; i++){
 		var listItem = '<li class="choice" id=' + i + '>' + choices[i] + '</li>';
