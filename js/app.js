@@ -14,7 +14,7 @@ var quiz = [
 	info: "Warning: Do not",
 	image: "headslide.gif"
 	},
-	{ choices: ["Baby Spins", "moon walk", "head slide", "walking the dog"],
+	{ choices: ["Baby Spins", "UFO", "lieutenant dan", "running man"],
 	correctAnswer: 0,
 	info: "This move is new. In fact, it’s so new, I had to make up a name for it. The ‘baby’ comes from a baby freeze, one of breakdancing’s most basic freezes. Basically, you quickly move in a circle while in this freeze. Not many bboys consider this a typical powermove yet, but it sure is becoming popular.",
 	image: "babyspins.gif"
