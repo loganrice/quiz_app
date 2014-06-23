@@ -14,14 +14,15 @@ var quiz = [
 	info: "Warning: Do not",
 	image: "headslide.gif"
 	},
-	{ choices: ["hand stand", "moon walk", "head slide", "walking the dog"],
-	correctAnswer: 2,
-	info: "Warning: Do not",
-	image: "headslide.gif"
+	{ choices: ["Baby Spins", "moon walk", "head slide", "walking the dog"],
+	correctAnswer: 0,
+	info: "This move is new. In fact, it’s so new, I had to make up a name for it. The ‘baby’ comes from a baby freeze, one of breakdancing’s most basic freezes. Basically, you quickly move in a circle while in this freeze. Not many bboys consider this a typical powermove yet, but it sure is becoming popular.",
+	image: "babyspins.gif"
 	}
 ]
 
 var CURRENTQUESTION = 0;
+var SCORE = 0;
 
 $(document).ready(function(){
 	$(".questionTotal").text(quiz.length);
@@ -40,6 +41,7 @@ $(document).ready(function(){
 		var answer = hasAnswer($(this).attr('id'));
 		if (answer == true){
 			$(this).addClass("correct");
+			increaseScore();
 		} else {
 			$(this).addClass("incorrect");
 		}
@@ -57,20 +59,31 @@ function hasAnswer(choice) {
 	return quiz[CURRENTQUESTION - 1].correctAnswer == choice;
 }
 
+function increaseScore() {
+	SCORE++;
+}
+
 function fillInQuiz(quizObject) {
-	var choices = quizObject[CURRENTQUESTION].choices;
-	var image = quizObject[CURRENTQUESTION].image;
-	var imagePath = "img/" + image
-
-	$(".questionNum").text(CURRENTQUESTION + 1);
-
-	for(i=0; i<choices.length; i++){
-		var listItem = '<li class="choice" id=' + i + '>' + choices[i] + '</li>';
+	if (isLastQuestion() == true) {
+		$("#next-btn").hide();
+		listItem = "<li class='unhighlight'>" + SCORE + " Out of " + quiz.length + "were correct</li>"
 		$("#choiceList").append(listItem);
+		$("#quizImage").attr("src", "img/breakdance.gif");
+	} else {
+		var choices = quizObject[CURRENTQUESTION].choices;
+		var image = quizObject[CURRENTQUESTION].image;
+		var imagePath = "img/" + image
+		$(".questionNum").text(CURRENTQUESTION + 1);
+		$("#quizImage").attr("src", imagePath);
+		for(i=0; i<choices.length; i++){
+			var listItem = '<li class="choice" id=' + i + '>' + choices[i] + '</li>';
+			$("#choiceList").append(listItem);
+		}
 	}
+}
 
-	$("#quizImage").attr("src", imagePath);
-
+function isLastQuestion() {
+	return CURRENTQUESTION == quiz.length;
 }
 
 function nextQuestion() {
