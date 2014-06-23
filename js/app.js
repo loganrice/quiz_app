@@ -33,6 +33,7 @@ $(document).ready(function(){
 	$('.btn-wrapper').click(function(){
 		$(this).hide("slow");
 		nextQuestion();
+		$("#next-btn").show();
 	});
 
 	$('#choiceList').on('click', '.choice', function() {

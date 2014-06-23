@@ -10,11 +10,7 @@ html, body {
 	width: 100%;
 }
 
-#reset-btn {
-  text-decoration: none;
-  font: inherit;
-  color: inherit;
-}
+
 
 header {
 	width: 90%;
@@ -245,7 +241,7 @@ header li {
 }
 
 .correct {
-  background-color: green;
+  background-color: #8ac007;
   border-radius: 3px;
   border-top: 1px solid #96d1f8;
   color: rgb(204, 204, 204);
@@ -259,7 +255,7 @@ header li {
 }
 
 .incorrect {
-  background-color: red;
+  background-color: #cc0000;
   border-radius: 3px;
   border-top: 1px solid #96d1f8;
   color: rgb(204, 204, 204);
@@ -272,3 +268,29 @@ header li {
   margin: 8px;
 }
 
+#reset-btn, #next-btn {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+.next-wrapper {
+  display: block;
+  height: 40px;
+
+}
+
+#next-btn {
+  background-color: #8ac007;
+  color: white;
+  border-radius: 3px;
+  float: right;
+  margin: 10px;
+  padding: 5px;
+  display: none;
+}
+
+#next-btn:hover {
+  background-color: white;
+  color: #8ac007;
+}
