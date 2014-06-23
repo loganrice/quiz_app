@@ -10,6 +10,12 @@ html, body {
 	width: 100%;
 }
 
+#reset-btn {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
 header {
 	width: 90%;
 	padding-left: 5%;
@@ -265,3 +271,4 @@ header li {
   padding: 10px;
   margin: 8px;
 }
+

@@ -26,6 +26,10 @@ var CURRENTQUESTION = 0;
 $(document).ready(function(){
 	$(".questionTotal").text(quiz.length);
 
+	$("#reset-btn").click(function() {
+		location.reload();
+	})
+
 	$('.btn-wrapper').click(function(){
 		$(this).hide("slow");
 		nextQuestion();
