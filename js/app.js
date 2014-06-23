@@ -4,10 +4,15 @@ var quiz = [
 	info: "Warning: Do not do this move on concrete… for obvious reasons. The headspin is probably the most iconic and most unnatural move in breakdancing. Although its origins are derived from capoeira, Kid freeze has claimed to have invented the ‘continuous headspin’. Today, the move has been mastered by bboys around the world. In fact Bboy Aichi, from Japan, holds the Guiness World record for 135 rotations in 1 minute.",
 	image: "headspin.gif"
 	},
-	{ choices: ["one", "two", "three", "four"],
-	correctAnswer: 3,
-	info: "Warning: Do not",
+	{ choices: ["jackhammers", "arm hops", "one arm push ups", "plank"],
+	correctAnswer: 0,
+	info: "You’ll come to find that many bboy moves do not actually look exactly like they sound. Such is the case for the jackhammer. This move may look impossible, but it’s actually just a matter of manipulating balance. It utilizes a technique called “stabbing, in which you support your entire bodyweight by placing your elbow on the stomach at a 90 degree angle. With the proper set up and a little leg push, the jackhammer is born.",
 	image: "jackhammers.gif"
+	},
+	{ choices: ["hand stand", "moon walk", "head slide", "walking the dog"],
+	correctAnswer: 2,
+	info: "Warning: Do not",
+	image: "headslide.gif"
 	}
 ]
 
